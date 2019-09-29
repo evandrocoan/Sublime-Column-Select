@@ -9,25 +9,28 @@ This plugin provides an alternate behavior for Sublime keyboard column selection
 
 ![example](demo1.gif)
 
-## Installing
-The best way to download and install Sublime Column Select is to use the Package Control plugin.  If you do not already have it installed, it's really the best way to manage your packages.
 
-For users new to the package manager:
-* Go to https://packagecontrol.io/installation and install Package Control.
-* Restart Sublime Text.
+## Installation
 
-Install Sublime Column Select:
-* Bring up the Command Palette (`Command+Shift+P` on OS X, `Control+Shift+P` on Linux/Windows).
-* Select "Package Control: Install Package" and wait while Package Control fetches the latest package list.
-* Select Column Select when the list appears.
+### By Package Control
 
-Package Control will handle automatically updating your packages.
+1. Download & Install `Sublime Text 3` (https://www.sublimetext.com/3)
+1. Go to the menu `Tools -> Install Package Control`, then,
+   wait few seconds until the `Package Control` installation finishes
+1. Go to the menu `Preferences -> Package Control`
+1. Type `Package Control Add Channel` on the opened quick panel and press <kbd>Enter</kbd>
+1. Then, input the following address and press <kbd>Enter</kbd>
+   ```
+   https://raw.githubusercontent.com/evandrocoan/StudioChannel/master/channel.json
+   ```
+1. Now, go again to the menu `Preferences -> Package Control`
+1. This time type `Package Control Install Package` on the opened quick panel and press <kbd>Enter</kbd>
+1. Then, search for `ColumnSelect` and press <kbd>Enter</kbd>
 
-Alternatively, you can fetch from github:
+See also:
+1. [ITE - Integrated Toolset Environment](https://github.com/evandrocoan/ITE)
+1. [Package control docs](https://packagecontrol.io/docs/usage) for details.
 
-	git clone git://github.com/ehuss/Sublime-Column-Select.git
-
-and place it in your packages directory.
 
 ## Usage
 By default it uses the default keystroke for column selection, plus a few extras.  These keystrokes will select the same column in the next or previous line, page (the visible region of the file), or until the beginning/end of the file.
